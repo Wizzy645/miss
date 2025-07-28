@@ -44,13 +44,76 @@ h1 {
     z-index: 10;
 }
 
-@keyframes rose-animation {
+/* New enhanced animations */
+@keyframes textShimmer {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
   50% {
-    transform: scale(1);
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes textFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes roseFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-15px) rotate(1deg);
+  }
+  66% {
+    transform: translateY(-8px) rotate(-1deg);
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1) rotate(180deg);
+  }
+}
+
+@keyframes particle-float {
+  0% {
+    transform: translateY(100vh) translateX(0px) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
     opacity: 1;
   }
-  100%{
-       transform: scale(1);
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) translateX(100px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes rose-animation {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
     opacity: 1;
   }
 }
