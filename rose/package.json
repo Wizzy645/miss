@@ -1,0 +1,17 @@
+{
+  "name": "san-valentin-rose",
+  "version": "1.0.0",
+  "description": "Valentine's Day animated rose project from CodePen",
+  "main": "src/index.html",
+  "scripts": {
+    "dev": "npx serve src -l 3000",
+    "start": "npx serve src -l 3000",
+    "build": "echo 'Static files are ready' && exit 0"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "keywords": ["valentine", "rose", "animation", "svg", "css"],
+  "author": "",
+  "license": "MIT"
+}
